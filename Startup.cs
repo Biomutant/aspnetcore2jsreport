@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using jsreport.AspNetCore;
-using jsreport.Binary.Linux;
+using jsreport.Binary;
 using jsreport.Local;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,8 +28,11 @@ namespace netreport
         {
             services.AddMvc();
             services.AddJsReport(new LocalReporting()
-            .UseBinary(JsReportBinary.GetBinary())
-            .Configure(cfg => cfg.AllowLocalFilesAccess().BaseUrlAsWorkingDirectory())
+            .UseBinary(RuntimeInformation.IsOSPlatform(OSPlatform.Windows)  ? 
+                jsreport.Binary.JsReportBinary.GetBinary() : 
+                jsreport.Binary.Linux.JsReportBinary.GetBinary())
+            .KillRunningJsReportProcesses()
+            .RunInDirectory(Path.Combine(Directory.GetCurrentDirectory(), "jsreport"))
             .AsUtility().Create());
         }
 

@@ -17,6 +17,18 @@
           "lib/netstandard2.0/jsreport.AspNetCore.dll": {}
         }
       },
+      "jsreport.Binary/1.10.0": {
+        "type": "package",
+        "dependencies": {
+          "jsreport.Shared": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/jsreport.Binary.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/jsreport.Binary.dll": {}
+        }
+      },
       "jsreport.Binary.Linux/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -4825,6 +4837,17 @@
         "jsreport.aspnetcore.nuspec",
         "lib/netstandard2.0/jsreport.AspNetCore.dll",
         "lib/netstandard2.0/jsreport.AspNetCore.xml"
+      ]
+    },
+    "jsreport.Binary/1.10.0": {
+      "sha512": "DAoX5UNwYxHGmPePNTcuJRXBoGz/iXAENfXxI4dDTK3tDBrsqKPT/Jeik7HR5KjWKad15lnPN3EP0U5pPKcr6A==",
+      "type": "package",
+      "path": "jsreport.binary/1.10.0",
+      "files": [
+        "jsreport.binary.1.10.0.nupkg.sha512",
+        "jsreport.binary.nuspec",
+        "lib/net45/jsreport.Binary.dll",
+        "lib/netstandard2.0/jsreport.Binary.dll"
       ]
     },
     "jsreport.Binary.Linux/1.10.0": {
@@ -12634,33 +12657,36 @@
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0",
       "jsreport.AspNetCore >= 1.0.1",
+      "jsreport.Binary >= 1.10.0",
       "jsreport.Binary.Linux >= 1.10.0",
       "jsreport.Local >= 1.1.2"
     ]
   },
   "packageFolders": {
-    "/home/luis/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Luis\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/luis/Documentos/netreport/netreport.csproj",
+      "projectUniqueName": "D:\\Github\\aspnetcore2jsreport\\netreport.csproj",
       "projectName": "netreport",
-      "projectPath": "/home/luis/Documentos/netreport/netreport.csproj",
-      "packagesPath": "/home/luis/.nuget/packages/",
-      "outputPath": "/home/luis/Documentos/netreport/obj/",
+      "projectPath": "D:\\Github\\aspnetcore2jsreport\\netreport.csproj",
+      "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\aspnetcore2jsreport\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/luis/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12689,6 +12715,10 @@
           "jsreport.AspNetCore": {
             "target": "Package",
             "version": "[1.0.1, )"
+          },
+          "jsreport.Binary": {
+            "target": "Package",
+            "version": "[1.10.0, )"
           },
           "jsreport.Binary.Linux": {
             "target": "Package",
