@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using jsreport.AspNetCore;
@@ -27,7 +28,8 @@ namespace netreport
             services.AddMvc();
             services.AddJsReport(new LocalReporting()
             .UseBinary(JsReportBinary.GetBinary())
-            .Configure(cfg =>cfg.AllowLocalFilesAccess().BaseUrlAsWorkingDirectory())
+            .RunInDirectory(Path.Combine(Directory.GetCurrentDirectory(), "jsreport", "temp"))
+            .Configure(cfg => cfg.AllowLocalFilesAccess().BaseUrlAsWorkingDirectory())
             .AsUtility().Create());
         }
 
