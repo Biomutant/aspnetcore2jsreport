@@ -1,0 +1,13 @@
+/home/luis/Documentos/netreport
+--output-path=obj/Release/netcoreapp2.0/
+--application-name=netreport
+--content-root=/home/luis/Documentos/netreport
+--file=/home/luis/Documentos/netreport/Views/Home/About.cshtml
+--file=/home/luis/Documentos/netreport/Views/Home/Contact.cshtml
+--file=/home/luis/Documentos/netreport/Views/Home/Index.cshtml
+--file=/home/luis/Documentos/netreport/Views/Home/Invoice.cshtml
+--file=/home/luis/Documentos/netreport/Views/Shared/Error.cshtml
+--file=/home/luis/Documentos/netreport/Views/Shared/_Layout.cshtml
+--file=/home/luis/Documentos/netreport/Views/Shared/_ValidationScriptsPartial.cshtml
+--file=/home/luis/Documentos/netreport/Views/_ViewImports.cshtml
+--file=/home/luis/Documentos/netreport/Views/_ViewStart.cshtml

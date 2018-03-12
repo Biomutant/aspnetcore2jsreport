@@ -1,0 +1,10 @@
+/home/luis/Documentos/netreport/bin/Release/netcoreapp2.0/netreport.deps.json
+/home/luis/Documentos/netreport/bin/Release/netcoreapp2.0/netreport.runtimeconfig.json
+/home/luis/Documentos/netreport/bin/Release/netcoreapp2.0/netreport.runtimeconfig.dev.json
+/home/luis/Documentos/netreport/bin/Release/netcoreapp2.0/netreport.dll
+/home/luis/Documentos/netreport/bin/Release/netcoreapp2.0/netreport.pdb
+/home/luis/Documentos/netreport/obj/Release/netcoreapp2.0/netreport.csproj.CoreCompileInputs.cache
+/home/luis/Documentos/netreport/obj/Release/netcoreapp2.0/netreport.AssemblyInfoInputs.cache
+/home/luis/Documentos/netreport/obj/Release/netcoreapp2.0/netreport.AssemblyInfo.cs
+/home/luis/Documentos/netreport/obj/Release/netcoreapp2.0/netreport.dll
+/home/luis/Documentos/netreport/obj/Release/netcoreapp2.0/netreport.pdb
