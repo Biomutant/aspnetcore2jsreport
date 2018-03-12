@@ -28,7 +28,6 @@ namespace netreport
             services.AddMvc();
             services.AddJsReport(new LocalReporting()
             .UseBinary(JsReportBinary.GetBinary())
-            .Configure(cfg => cfg.AllowLocalFilesAccess().BaseUrlAsWorkingDirectory())
             .AsUtility().Create());
         }
 
